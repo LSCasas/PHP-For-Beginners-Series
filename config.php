@@ -1,12 +1,8 @@
 <?php
+// config.php
 
-return [
-    'database' => [
-        'host' => 'localhost',
-        'port' => 3306,
-        'dbname' => 'myapp',
-        'charset' => 'utf8mb4'
-    ],
-
-    //
-];
+define('DB_HOST', 'localhost');
+define('DB_PORT', '3306');
+define('DB_NAME', 'myapp');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', 'Luiscasas45$');
