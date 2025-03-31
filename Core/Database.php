@@ -7,6 +7,7 @@ use PDO;
 
 class Database
 {
+
     public $connection;
     public $statement;
 
