@@ -25,6 +25,7 @@ class Database
     }
 
 
+
     public function query(
         $query,
         $params = []
