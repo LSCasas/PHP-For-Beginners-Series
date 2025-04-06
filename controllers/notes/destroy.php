@@ -7,6 +7,7 @@ $db = new Database($config['database']);
 
 $currentUserId = 1;
 
+// Fetch the note from the database using the provided ID from the POST request
 $note = $db->query('select * from notes where id = :id', [
     'id' => $_POST['id']
 ])->findOrFail();
