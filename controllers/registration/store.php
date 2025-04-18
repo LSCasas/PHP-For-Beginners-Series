@@ -1,20 +1,21 @@
 <?php
 
+use Core\App;
 use Core\Database;
 use Core\Validator;
-use Core\App;
+
+$db = App::resolve(Database::class);
 
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-
 $errors = [];
 if (!Validator::email($email)) {
-    $errors['email'] = 'Please provide a valid emial address';
+    $errors['email'] = 'Please provide a valid email address.';
 }
 
 if (!Validator::string($password, 7, 255)) {
-    $errors['password'] = 'Please provide a valid password ';
+    $errors['password'] = 'Please provide a password of at least seven characters.';
 }
 
 if (! empty($errors)) {
@@ -22,9 +23,6 @@ if (! empty($errors)) {
         'errors' => $errors
     ]);
 }
-
-
-$db = App::resolve(Database::class);
 
 $user = $db->query('select * from users where email = :email', [
     'email' => $email
@@ -39,11 +37,10 @@ if ($user) {
         'password' => $password
     ]);
 
-
     $_SESSION['user'] = [
         'email' => $email
     ];
 
-    header(('location: /'));
+    header('location: /');
     exit();
 }
