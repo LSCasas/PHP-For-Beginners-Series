@@ -37,7 +37,16 @@ if ($user) {
         'password' => password_hash($password, PASSWORD_BCRYPT)
     ]);
 
+    // Ensure the login function is defined or included
+    if (!function_exists('login')) {
+        function login($user)
+        {
+            $_SESSION['user_id'] = $user['id'];
+        }
+    }
+
     login($user);
+
 
     header('location: /');
     exit();
