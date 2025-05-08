@@ -1,0 +1,16 @@
+{
+  "name": "luiscasas47/php-for-beginners-series",
+  "authors": [
+    {
+      "name": "Luis Casas",
+      "email": "luisscasas45@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Core\\": "Core/",
+      "Http\\": "Http/"
+    }
+  }
+}
