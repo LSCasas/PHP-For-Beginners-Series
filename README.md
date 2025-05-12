@@ -4,15 +4,15 @@ This repository is part of the **PHP for Beginners** educational series original
 
 ## Key Features
 
-- ✅ **Organized structure** using a simple MVC-inspired architecture
-- ✅ **Modern tooling**:
+-  **Organized structure** using a simple MVC-inspired architecture
+-  **Modern tooling**:
   - Composer for dependency management
   - PestPHP for testing
-- ✅ **Hands-on examples**:
+-  **Hands-on examples**:
   - Form validation and old input flashing
   - Routing and redirection
   - Dependency injection and service containers
-- ✅ **Real-world practices** for learning foundational PHP concepts
+-  **Real-world practices** for learning foundational PHP concepts
 
 ## Repository Structure
 
