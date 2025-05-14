@@ -3,7 +3,7 @@
 This repository is part of the **PHP for Beginners** educational series originally created by [Laracasts](https://laracasts.com). It serves as a practical and modern introduction to PHP development, aimed at beginners who want to build web applications using clean, structured code and professional tools.
  
 ## Key Features
-
+ 
 -  **Organized structure** using a simple MVC-inspired architecture
 -  **Modern tooling**:
   - Composer for dependency management
