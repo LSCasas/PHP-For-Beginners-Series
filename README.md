@@ -1,4 +1,4 @@
-# PHP for Beginners Series
+# Demo PHP
 
 This repository is part of the **PHP for Beginners** educational series originally created by [Laracasts](https://laracasts.com). It serves as a practical and modern introduction to PHP development, aimed at beginners who want to build web applications using clean, structured code and professional tools.
 
@@ -55,8 +55,8 @@ PHP-For-Beginners-Series/
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/LSCasas/PHP-For-Beginners-Series.git
-   cd PHP-For-Beginners-Series
+   git clone https://github.com/LSCasas/demo_php.git
+   cd demo_php
    ```
 
 2. **Install dependencies via Composer:**
